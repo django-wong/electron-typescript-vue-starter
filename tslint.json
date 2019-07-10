@@ -1,0 +1,127 @@
+{
+    "defaultSeverity": "error",
+    "extends": [
+        "tslint:recommended"
+    ],
+    "jsRules": {},
+    "rules": {
+        "arrow-return-shorthand": true,
+        "callable-types": true,
+        "class-name": true,
+        "comment-format": [
+            true,
+            "check-space"
+        ],
+        "curly": true,
+        "deprecation": {
+            "severity": "warn"
+        },
+        "eofline": true,
+        "forin": true,
+        "import-blacklist": [
+            true,
+            "rxjs/Rx"
+        ],
+        "import-spacing": true,
+        "indent": [
+            true,
+            "spaces",
+            4
+        ],
+        "interface-over-type-literal": false,
+        "interface-name": false,
+        "label-position": true,
+        "max-line-length": false,
+        "member-access": false,
+        "max-classes-per-file": false,
+        "ordered-imports": false,
+        "member-ordering": [
+            true, {
+                "order": [
+                    "static-field",
+                    "instance-field",
+                    "static-method",
+                    "instance-method"
+                ]
+            }
+        ],
+        "no-arg": true,
+        "no-bitwise": false,
+        "no-console": [
+            false,
+            "debug",
+            "info",
+            "time",
+            "timeEnd",
+            "trace"
+        ],
+        "no-construct": true,
+        "no-consecutive-blank-lines": false,
+        "no-debugger": true,
+        "no-duplicate-super": true,
+        "no-empty": false,
+        "no-empty-interface": true,
+        "no-eval": false,
+        "no-inferrable-types": [
+            false,
+            "ignore-params"
+        ],
+        "no-namespace": false,
+        "no-misused-new": true,
+        "no-non-null-assertion": true,
+        "no-redundant-jsdoc": false,
+        "no-shadowed-variable": false,
+        "no-string-literal": false,
+        "no-string-throw": true,
+        "no-switch-case-fall-through": true,
+        "no-trailing-whitespace": [true, "ignore-comments", "ignore-jsdoc", "ignore-blank-lines"],
+        "no-unnecessary-initializer": true,
+        "no-unused-expression": true,
+        "no-var-keyword": true,
+        "no-var-requires": false,
+        "object-literal-sort-keys": false,
+        "only-arrow-functions": false,
+        "one-line": [
+            true,
+            "check-open-brace",
+            "check-catch",
+            "check-else",
+            "check-whitespace"
+        ],
+        "prefer-const": [true, {"destructuring": "all"}],
+        "quotemark": [
+            false,
+            "single"
+        ],
+        "radix": true,
+        "semicolon": [
+            false,
+            "always"
+        ],
+        "triple-equals": [
+            true,
+            "allow-null-check"
+        ],
+        "trailing-comma": false,
+        "typedef-whitespace": [
+            true, {
+                "call-signature": "nospace",
+                "index-signature": "nospace",
+                "parameter": "nospace",
+                "property-declaration": "nospace",
+                "variable-declaration": "nospace"
+            }
+        ],
+        "unified-signatures": true,
+        "variable-name": false,
+        "whitespace": [
+            true,
+            "check-branch",
+            "check-decl",
+            "check-operator",
+            "check-separator",
+            "check-type"
+        ]
+    },
+    "rulesDirectory": []
+}
