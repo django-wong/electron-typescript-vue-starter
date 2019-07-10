@@ -14,28 +14,24 @@ module.exports = [
 			},
 		},
 	},
+	{
+		test: /\.ts(x?)$/,
+		exclude: /(node_modules|.webpack)/,
+        loader: "ts-loader",
+        options: {
+            // appendTsSuffixTo: [/\.vue$/],
+            /**
+             * If you want to speed up compilation significantly. However,
+             * many of the benefits you get from static type checking
+             * between different dependencies in your application wll be lost
+             */
+            transpileOnly: true
+        }
+	},
     {
         test: /\.vue$/,
         loader: 'vue-loader'
     },
-	{
-		test: /\.ts(x?)$/,
-		exclude: /node_modules/,
-		use: [
-            {
-                loader: "ts-loader",
-                options: {
-                    transpileOnly: true
-                    /**
-                     * If you want to speed up compilation significantly. However,
-                     * many of the benefits you get from static type checking
-                     * between different dependencies in your application wll be lost
-                     * transpileOnly: true
-                     */
-                }
-            }
-        ]
-	}
 	// Put your webpack loader rules in this array.  This is where you would put
 	// your ts-loader configuration for instance:
 	/**
