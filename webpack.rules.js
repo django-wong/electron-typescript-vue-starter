@@ -30,7 +30,10 @@ module.exports = [
 	},
     {
         test: /\.vue$/,
-        loader: 'vue-loader'
+        loader: 'vue-loader',
+        options: {
+            hotReload: true
+        }
     },
 	// Put your webpack loader rules in this array.  This is where you would put
 	// your ts-loader configuration for instance:
