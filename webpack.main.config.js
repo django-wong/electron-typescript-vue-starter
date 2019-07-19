@@ -14,4 +14,10 @@ module.exports = {
     module: {
         rules: require('./webpack.rules'),
     },
+
+    resolve: {
+        alias: {
+            vue: 'vue/dist/vue.js'
+        }
+    },
 };

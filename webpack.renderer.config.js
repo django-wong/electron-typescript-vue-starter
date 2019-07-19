@@ -1,3 +1,4 @@
+const CopyPlugin = require('copy-webpack-plugin');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
 // const webpack = require('webpack');
 
@@ -17,6 +18,9 @@ module.exports = {
 
     plugins: [
         // new webpack.HotModuleReplacementPlugin(),
-        new VueLoaderPlugin()
+        new VueLoaderPlugin(),
+        new CopyPlugin([
+            { from: 'assets', to: 'assets' }
+        ])
     ]
 };
